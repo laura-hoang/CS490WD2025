@@ -224,6 +224,30 @@ dialog .btn{
   background:var(--blue-400);
 }
 
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--blue-300);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn.show {
+  display: block;
+  opacity: 0.9;
+}
+
+#scrollTopBtn:hover {
+  opacity: 1;
+}
+
 @media (max-width:700px){
   .main-nav{gap:8px;}
   .site-header{padding:14px 16px;}
