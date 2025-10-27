@@ -3,30 +3,112 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS490WD Projects</title>
+    <title>Laura Hoang - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="midterm/styles.css">
   </head>
+
   <body>
     <!--this is my header-->
-    <header>
-        <h1>CS490WD Projects</h1>
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">🪼</span>
+        <h1>Laura Hoang</h1>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn ghost" aria-pressed="false">🌑 Dark</button>
+      </nav>
     </header>
 
     <!--this is my navigation-->
-    <nav>
-      <b>
-        <a href="index.html">Home</a>&nbsp;&nbsp;
-        <a href="week2project/home.html">Parks & Rec</a>&nbsp;&nbsp;
-        <a href="week3project/home.html">Cozy Cafe</a>&nbsp;&nbsp;
-        <a href="week4project/home.html">Travel Guide</a>&nbsp;&nbsp;
-        <a href="week5project/home.html">Tech Showcase</a>&nbsp;&nbsp;
-        <a href="week6project/home.html">Shopping List</a>&nbsp;&nbsp;
-        <a href="week7project/home.html">Rentals SQL</a>
-      </b>
-    </nav>
-    
-    <hr>
-    <p>Welcome to my CS 490WD Projects homepage! TBA....</p>
-  
+    <main>
+      <section class="hero" aria-labelledby="greeting">
+        <h2 id="greeting">Hi!!!</h2>
+        <p class="tagline">CS 490WD Student trying to learn HTML/CSS/JS!</p>
+      </section>
+
+      <section class="projects" class="projects" aria-labelledby="proj-title">
+        <h2 id="proj-title">Here are my Project Cards!</h2>
+
+        <div class="grid">
+          <article class="card" tabindex="0" data-title="Week 2 - Local Parks" data-decs="2-page site!" data-link="week2project/home.html">
+            <h3>Week 2 - Parks & Rec</h3>
+            <p>Semantic layout, nav links, lists, and footer.</p>
+            <div class="actions">
+              <a class="btn" href="week2project/home.html">Open</a>
+            </div>
+          </article>
+
+          <article class="card" tabindex="0" data-title="Week 3 - Cozy Café" data-decs="Home & Menu with stylesheet!" data-link="week3project/home.html">
+            <h3>Week 3 - Cozy Café</h3>
+            <p>External CSS, nav links, lists, and footer.</p>
+            <div class="actions">
+              <a class="btn" href="week3project/home.html">Open</a>
+            </div>
+          </article>
+
+          <article class="card" tabindex="0" data-title="Week 4 - Paris Travel Guide" data-decs="2-page site with images!" data-link="week4project/home.html">
+            <h3>Week 4 - Travel Guide</h3>
+            <p>External CSS, images, nav links, lists, and footer.</p>
+            <div class="actions">
+              <a class="btn" href="week4project/home.html">Open</a>
+            </div>
+          </article>
+
+          <article class="card" tabindex="0" data-title="Week 5 - Tech Product Showcase" data-decs="Grid and can view on mobile/tablet!" data-link="week5project/home.html">
+            <h3>Week 5 - Cozy Café</h3>
+            <p>External CSS, responsive grid, and footer.</p>
+            <div class="actions">
+              <a class="btn" href="week5project/home.html">Open</a>
+            </div>
+          </article>
+
+          <article class="card" tabindex="0" data-title="Week 6 - Shopping List" data-decs="List with counters, delete, and clear!" data-link="week6project/home.html">
+            <h3>Week 6 - SHopping List</h3>
+            <p>Events, lists, and footer.</p>
+            <div class="actions">
+              <a class="btn" href="week6project/home.html">Open</a>
+            </div>
+          </article>
+
+          <article class="card" tabindex="0" data-title="Week 7 - SQL Script" data-decs="Customers & rentals tables!" data-link="week7project/home.html">
+            <h3>Week 7 - SQL</h3>
+            <p>SQL file</p>
+            <div class="actions">
+              <a class="btn" href="week7project/home.html">Open</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:laura.hoang05@gmail.com">laura.hoang05@gmail.com</a></li>
+          <li>Github: <a href="https://github.com/laura-hoang" target="_blank" rel="noopener">laura-hoang</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/lauraxhoang/" target="_blank" rel="noopener">Profile</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small> &copy; <span id="year"></span>Laura Hoang - Built with HTML, CSS, JS</small>
+    </footer>
+
+    <dialog id="modal">
+      <article>
+        <h3 id="modalTitle">Project</h3>
+        <p id="modalDesc"></p>
+        <a id="modalLink" class="btn" href="#" target="_blank" rel="noopener">Open Project</a>
+        <button id="modalClose" class="btn ghost">Close</button>
+      </article>
+    </dialog>
+
+    <button id="toTop" aria-label="Scroll to top">⬆️</button>  
+    <script src="midterm/script.js"></script>
   </body>
 </html>
 
