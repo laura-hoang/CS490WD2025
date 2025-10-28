@@ -1,3 +1,4 @@
+//grabs ur time to say whatever greeting when u view it the time yk
 const greetEl= document.getElementById('greeting');
 (function setGreeting(){
   const h = new Date().getHours();
@@ -28,6 +29,7 @@ function getInitialTheme() {
 
 applyTheme(getInitialTheme());
 
+// when u click the light or dark buttpn it will read it
 if (toggle) {
   toggle.addEventListener('click', () => {
     const next = root.classList.contains('dark') ? 'light' : 'dark';
@@ -36,6 +38,7 @@ if (toggle) {
   });
 }
 
+// the button that listen when u click the scroll up
 const toTop = document.getElementById('toTop');
 if (toTop) {
   window.addEventListener('scroll', () => {
