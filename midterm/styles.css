@@ -9,6 +9,11 @@
   --ink-soft:#415b7a;
   --card:#ffffff;
   --bg: var(--blue-50);
+
+  --btn-bg: #bed9f1;
+  --btn-text: #0a1a3a;
+  --btn-shadow: 0 6px 16px rgba(2,0,108,.18);
+  --btn-shadow-hover: 0 10px 24px rgba(2,0,108,.28);
 }
 
 :root.dark{
@@ -20,6 +25,11 @@
   --blue-200:#010057;
   --blue-300:#02006c;
   --blue-400:#090088;
+
+  --btn-bg: #02006c;
+  --btn-text: #e9efff;
+  --btn-shadow: 0 8px 22px rgba(9,0,136,.40), 0 0 18px rgba(144,189,230,.25);
+  --btn-shadow-hover: 0 12px 28px rgba(9,0,136,.55), 0 0 22px rgba(144,189,230,.35);
 }
 
 *{
@@ -149,7 +159,9 @@ body{
 }
 
 .btn:hover{
-  background:var(--blue-400);
+  transform: translateY(-1px);
+  box-shadow: var(--btn-shadow-hover);
+  filter: brightness(1.03);
 }
 
 .contact{
