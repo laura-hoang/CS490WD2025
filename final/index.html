@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LH - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="midterm/styles.css">
+    <link rel="stylesheet" href="final/styles.css">
   </head>
 
   <body>
@@ -17,6 +17,8 @@
       </div>
 
       <nav class="main-nav" aria-label="Primary">
+        <a href="#bio">About</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <button id="themeToggle" class="btn ghost" aria-pressed="false">🌑 Dark</button>
@@ -25,11 +27,63 @@
 
     <!--this is my navigation-->
     <main>
+      <!--my bio-->
       <section class="hero" aria-labelledby="greeting">
-        <h2 id="greeting">Hi!!!</h2>
-        <p class="tagline">CS 490WD Student trying to learn HTML/CSS/JS!</p>
+        <div class="hero-text">
+          <h2 id="greeting">Hi!!!</h2>
+          <p class="tagline">A CS student trying to explore web dev!</p>
+          <p>
+            My name is Laura Hoang and I am a BS Computer Science student who enjoys
+            building user friendly UIs with HTML, CSS, and JavaScript! This portfolio collects
+            projects from CS490WD and soon other coursework as I prepare for the future!
+          </p>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="profile.png" alt="Professional photo of me">
+        </figure>
       </section>
 
+      <!--education part-->
+      <section id="education" class="section education" aria-labelledby="edu-title">
+        <h2 id="edu-title">Education</h2>
+        <p class="section-intro">
+          A quick overview of my academic background and the classes I have taken!
+        </p>
+
+        <div class="edu-grid">
+          <article class="edu-card">
+            <h3>University of Missouri-Kansas City</h3>
+            <p class="muted">B.S. in Computer Science - Expected Graduation: 2027</p>
+            <p>
+              Focused on software development, networking, and other STEM areas.
+            </p>
+          </article>
+
+          <article class="edu-card">
+            <h3>Selected Courses</h3>
+            <ul class="course-list">
+              <li>Web Development (CS490WD)</li>
+              <li>Software Testing (CS458)</li>
+              <li>Intro to Cybersecurity (CS361)</li>
+              <li>Professionalism &amp; Ethics (CS304)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!--resume part-->
+      <section id="resume" class="section resume" aria-labelledby="resume-title">
+        <h2 id="resume-title">Resume</h2>
+        <p class="section-intro">
+          View or download my most up to date resume with the link below!
+        </p>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">
+          View Resume (PDF)
+        </a>
+      </section>
+
+      <!--project part-->
       <section class="projects" class="projects" aria-labelledby="proj-title">
         <h2 id="proj-title">Here are my Project Cards!</h2>
 
@@ -84,6 +138,7 @@
         </div>
       </section>
 
+      <!--contact part-->
       <section id="contact" class="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact Info!</h2>
         <ul>
@@ -108,7 +163,7 @@
     </dialog>
 
     <button id="toTop" aria-label="Scroll to top">⬆️</button>  
-    <script src="midterm/script.js" defer></script>
+    <script src="final/script.js" defer></script>
   </body>
 </html>
 
