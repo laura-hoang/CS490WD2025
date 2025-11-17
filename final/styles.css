@@ -169,6 +169,10 @@ body{
   text-align: center;
 }
 
+.resume-section {
+  text-align: center;
+}
+
 .tagline{
   color:var(--ink-soft);
   margin-top:6px;
