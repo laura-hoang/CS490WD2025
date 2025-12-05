@@ -9,11 +9,11 @@ export default function ItemList(){
   ];
   
   return `
-  <section class= "items">
-  <h2>Song List</h2>
-  <div class= "grid">
-  ${items.map(ItemCard).join("")}
-  </div>
-  </section>
+    <section class= "items">
+      <h2>Song List</h2>
+      <div class= "grid">
+        ${items.map((song) => ItemCard(song)).join("")}
+      </div>
+    </section>
   `;
 }
