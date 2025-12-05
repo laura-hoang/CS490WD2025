@@ -1,0 +1,70 @@
+body{
+  font-family: "Gaegu", sans-serif;
+  background: #d1e4f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #1f2a44;
+}
+
+header{
+  padding: 20px;
+  background: #aacae8;
+}
+
+.featured, .items, .funfact{
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10 px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+  border: 2px solid #7eadd7;
+}
+
+button{
+  padding: 10px 18px;
+  border: none;
+  background: #7eadd7;
+  color: white;
+  font-family: "Gaegu", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #5c8bb1;
+}
+
+.hidden{
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+footer{
+  margin-top: 40px;
+  padding: 20px;
+  background: #aacae8;
+}
